@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <title>Savant Social Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md flex-md-nowrap sticky-top bg-dark navbar-dark fixed-top p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-white" href="#">Jaiz Bank</a>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <button class="btn btn-sm btn-success btn-plus"> <i class="fa fa-plus fa-fw"></i>Add Profile</button>
+              </li>
+            <li>
+                <i class="fa fa-bell-o"></i>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="btn btn-user btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdown07">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Upgrade Plan</a>
+                    <a class="dropdown-item" href="#">Signout</a>
+                  </div>
+             </li>
+           
+             </ul>
+        </div>
+       </nav> 
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item" >
+              <a class="nav-link active" href="#" style="color: #ff6600" onclick="">
+                <i class="fa fa-home fa-fw"></i>
+                Get Started <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-tachometer fa-fw"></i>
+                Dashboard
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Analytics</span>
+            <a class="d-flex align-items-center text-muted" href="#">
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-twitter fa-fw"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-facebook fa-fw"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-instagram fa-fw"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Competition</span>
+            <a class="d-flex align-items-center text-muted" href="#">
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Gtbank
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="file-text"></span>
+                Fidelity
+              </a>
+            </li>
+          </ul>
+
+          <button class="btn btn-outline-danger btn1 btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</button>
+          <div class="dropdown-menu" aria-labelledby="dropdown07">
+            <a class="dropdown-item" href="#">Getting Started</a>
+            <a class="dropdown-item" href="#">FAQ</a>
+            <a class="dropdown-item" href="#">Signout</a>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h1 class="h2">Dashboard</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button class="btn btn-outline-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                <div class="dropdown-menu" aria-labelledby="dropdown07">
+                  <a class="dropdown-item" href="#">Pdf</a>
+                  <a class="dropdown-item" href="#">Xlsx</a>
+                  <a class="dropdown-item" href="#">Pptx</a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-dark">Share</button>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar"></span>
+              This week
+            </button>
+          </div>
+        </div>
+
+        <h5>Facebook Overview</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-facebook-official facebook" aria-hidden="true"></i> 
+                  <h5 class="card-title text-center">Growth of Followers</h5>
+
+                  <canvas class="my-4" id="myChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-facebook-official facebook" aria-hidden="true"></i>
+                  <h5 class="card-title text-center">Gender Distribution</h5>
+
+                  <canvas class="my-4" id="pChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <br>
+
+        
+         <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <i class="fa fa-facebook-official facebook" aria-hidden="true"></i> 
+                <h5 class="card-title text-center">Location of Followers</h5>
+
+                <canvas class="my-4" id="Chart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <i class="fa fa-facebook-official facebook" aria-hidden="true"></i> 
+                <h5 class="card-title text-center">Popularity Distribution</h5>
+
+                <canvas class="my-4" id="lChart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br>
+
+      <!-- Twitter Survey -->
+
+      <h5>Twitter Overview</h5> <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <i class="fa fa-twitter-square twitter" aria-hidden="true"></i>
+                <h5 class="card-title text-center">Growth of Followers</h5>
+
+                <canvas class="my-4" id="mChart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-twitter-square twitter" aria-hidden="true"></i>
+                  <h5 class="card-title text-center">Gender Distribution</h5>
+
+                  <canvas class="my-4" id="peChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <br> 
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-twitter-square twitter" aria-hidden="true"></i>
+                  <h5 class="card-title text-center">Location of Followers</h5>
+  
+                  <canvas class="my-4" id="tpChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-twitter-square twitter" aria-hidden="true"></i>
+                  <h5 class="card-title text-center">Popularity Distribution</h5>
+  
+                  <canvas class="my-4" id="zChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+        <!-- Instagram Survey -->
+
+       <h5>Instagram Overview</h5> <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <i class="fa fa-instagram facebook fa-fw"></i>
+                <h5 class="card-title text-center">Growth of Followers</h5>
+
+                <canvas class="my-4" id="meeChart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-instagram facebook fa-fw"></i>
+                  <h5 class="card-title text-center">Gender Distribution</h5>
+
+                  <canvas class="my-4" id="peeChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <br> 
+        <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-instagram facebook fa-fw"></i>
+                  <h5 class="card-title text-center">Location of Followers</h5>
+  
+                  <canvas class="my-4" id="tChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <i class="fa fa-instagram facebook fa-fw"></i>
+                  <h5 class="card-title text-center">Popularity Distribution</h5>
+  
+                  <canvas class="my-4" id="zeChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+    </main>
+  </div>
+</div>
+
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+   
+      <script>
+        feather.replace()
+      </script>
+
+       <!-- Graphs -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+       <script>
+         var ctx = document.getElementById("myChart").getContext('2d');
+         var myChart = new Chart(ctx, {
+           type: 'bar',
+           data: {
+             labels: ["Jan5", "Jan12", "Jan19", "Jan26", "Feb2", "Feb9"],
+             datasets: [{
+               label: 'Number of Followers',
+               data: [12, 19, 3, 5, 2, 3],
+               backgroundColor: [
+               'rgba(255, 99, 132, 0.2)',
+               'rgba(54, 162, 235, 0.2)',
+               'rgba(255, 206, 86, 0.2)',
+               'rgba(75, 192, 192, 0.2)',
+               'rgba(153, 102, 255, 0.2)',
+               'rgba(255, 159, 64, 0.2)'
+               ],
+               borderColor: [
+               'rgba(255,99,132,1)',
+               'rgba(54, 162, 235, 1)',
+               'rgba(255, 206, 86, 1)',
+               'rgba(75, 192, 192, 1)',
+               'rgba(153, 102, 255, 1)',
+               'rgba(255, 159, 64, 1)'
+               ],
+               borderWidth: 1
+             }]
+           },
+           options: {
+             scales: {
+               yAxes: [{
+                 ticks: {
+                   beginAtZero:true
+                 }
+               }]
+             }
+           }
+         });
+       </script>
+ 
+ <script>
+     var ctx = document.getElementById("mChart").getContext('2d');
+     var myChart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["Jan5", "Jan12", "Jan19", "Jan26", "Feb2", "Feb9"],
+         datasets: [{
+           label: 'Number of Followers',
+           data: [12, 19, 3, 5, 2, 3],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+     
+     <script>
+     var ctx = document.getElementById("tpChart").getContext('2d');
+     var tpChart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["FCT", "Lagos", "P-Harcourt", "Kano", "Benue", "Other"],
+         datasets: [{
+           label: 'Location of Followers',
+           data: [70, 50, 30, 15, 10, 5],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+   <script>
+     var ctx = document.getElementById("tChart").getContext('2d');
+     var tChart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["FCT", "Lagos", "P-Harcourt", "Kano", "Benue", "Other"],
+         datasets: [{
+           label: 'Location of Followers',
+           data: [70, 50, 30, 15, 10, 5],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+ <script>
+     var ctx = document.getElementById("meeChart").getContext('2d');
+     var myChart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["Jan5", "Jan12", "Jan19", "Jan26", "Feb2", "Feb9"],
+         datasets: [{
+           label: 'Number of Followers',
+           data: [12, 19, 3, 5, 2, 3],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+ 
+       <script type="text/javascript">
+         var ctx = document.getElementById("pChart").getContext('2d');
+         var pChart = new Chart(ctx, {
+           type: 'doughnut',
+           data: {
+             labels: ['Male','Female'],
+             datasets: [{
+               label: 'Percentage of followers',
+               data: [60, 40],
+               backgroundColor: [
+               'rgba(255, 99, 132, 1)',
+               'rgba(54, 162, 235, 1)'
+               ],
+               borderColor: [
+               'rgba(255,99,132,2)',
+               'rgba(54, 162, 235, 2)'
+               ],
+               borderWidth: 1        
+             }],
+           }
+ 
+ 
+ 
+         });
+       </script>
+ <script type="text/javascript">
+   var ctx = document.getElementById("peChart").getContext('2d');
+   var pChart = new Chart(ctx, {
+     type: 'doughnut',
+     data: {
+       labels: ['Male','Female'],
+       datasets: [{
+         label: 'Percentage of followers',
+         data: [60, 40],
+         backgroundColor: [
+         'rgba(255, 99, 132, 1)',
+         'rgba(54, 162, 235, 1)'
+         ],
+         borderColor: [
+         'rgba(255,99,132,2)',
+         'rgba(54, 162, 235, 2)'
+         ],
+         borderWidth: 1        
+       }],
+     }
+ 
+ 
+ 
+   });
+ </script>
+ <script type="text/javascript">
+   var ctx = document.getElementById("peeChart").getContext('2d');
+   var pChart = new Chart(ctx, {
+     type: 'doughnut',
+     data: {
+       labels: ['Male','Female'],
+       datasets: [{
+         label: 'Percentage of followers',
+         data: [60, 40],
+         backgroundColor: [
+         'rgba(255, 99, 132, 1)',
+         'rgba(54, 162, 235, 1)'
+         ],
+         borderColor: [
+         'rgba(255,99,132,2)',
+         'rgba(54, 162, 235, 2)'
+         ],
+         borderWidth: 1        
+       }],
+     }
+ 
+ 
+ 
+   });
+ </script>
+ 
+       <script>
+           var ctx = document.getElementById("lChart");
+           var lChart = new Chart(ctx, {
+             type: 'line',
+             data: {
+               labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+               datasets: [{
+                 data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                 lineTension: 0,
+                 backgroundColor: 'transparent',
+                 borderColor: '#007bff',
+                 borderWidth: 4,
+                 pointBackgroundColor: '#007bff'
+               }]
+             },
+             options: {
+               scales: {
+                 yAxes: [{
+                   ticks: {
+                     beginAtZero: false
+                   }
+                 }]
+               },
+               legend: {
+                 display: false,
+               }
+             }
+           });
+         </script>
+ 
+ <script>
+     var ctx = document.getElementById("zChart");
+     var lChart = new Chart(ctx, {
+       type: 'line',
+       data: {
+         labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+         datasets: [{
+           data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+           lineTension: 0,
+           backgroundColor: 'transparent',
+           borderColor: '#007bff',
+           borderWidth: 4,
+           pointBackgroundColor: '#007bff'
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero: false
+             }
+           }]
+         },
+         legend: {
+           display: false,
+         }
+       }
+     });
+   </script>
+   <script>
+       var ctx = document.getElementById("zeChart");
+       var lChart = new Chart(ctx, {
+         type: 'line',
+         data: {
+           labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+           datasets: [{
+             data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+             lineTension: 0,
+             backgroundColor: 'transparent',
+             borderColor: '#007bff',
+             borderWidth: 4,
+             pointBackgroundColor: '#007bff'
+           }]
+         },
+         options: {
+           scales: {
+             yAxes: [{
+               ticks: {
+                 beginAtZero: false
+               }
+             }]
+           },
+           legend: {
+             display: false,
+           }
+         }
+       });
+     </script>
+ 
+ <script>
+     var ctx = document.getElementById("Chart").getContext('2d');
+     var Chart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["FCT", "Lagos", "P-Harcourt", "Kano", "Benue", "Other"],
+         datasets: [{
+           label: 'Location of Followers',
+           data: [70, 50, 30, 15, 10, 5],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+ 
+
+
+
+    </body>
+    </html>
