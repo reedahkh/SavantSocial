@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Icons -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      
+        <title>Savant Social Dashboard</title>
+      
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+        <!-- Custom styles for this template -->
+        <!-- <link href="css/dashboard.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="css/charts.css">
+        <script src="js/Chart.bundle.js"></script>
+        <script src="js/utils.js"></script>
+            <style>
+            canvas {
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+            </style>
+      </head>
+      
+      <body>
+            <header>
+                    <!-- Fixed navbar -->
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #242424;">
+                            <a class="navbar-brand" href="dashboard.html">
+                                    <img src="img/Vector.png" width="80" height="50" class="d-inline-block align-top" alt="">
+                                  </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                        
+                        </ul>
+                        <form class="form-inline mt-2 mt-md-0">
+                                <ul class="navbar-nav mr-auto">
+                                     
+                                        <li class="nav-item ">
+                                                <i class="fa fa-bell-o"></i>
+                                            </li>
+                                            <li>
+                                                <h5 class="jaiz"><a href="" style="color:white; padding-top: 5%" >Jaiz Bank</a></h5> 
+                                            </li>
+                                            <li class="nav-item dropdown new-nav">
+                                                    <button class="btn btn-user btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
+                                                        <a class="dropdown-item" href="#">Settings</a>
+                                                        <a class="dropdown-item" href="#">Upgrade Plan</a>
+                                                        <a class="dropdown-item" href="#">Signout</a>
+                                                    </div>
+                                                </li>
+                                </ul>
+                        </form>
+                      </div>
+                    </nav>
+                  </header>
+              
+            
+            <div role="main" class="col-md-11  pt-3 ml-5 nav-2">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <h1 class="h2"></h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group mr-2">
+                      <button class="btn btn-outline-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdown07">
+                        <a class="dropdown-item" href="#">Pdf</a>
+                        <a class="dropdown-item" href="#">Xlsx</a>
+                        <a class="dropdown-item" href="#">Pptx</a>
+                      </div>
+                  </div>
+                  <button type="button" class="btn btn-outline-dark">Share</button>
+                  <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <span data-feather="calendar"></span>
+                    This week
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+                       <div class="container" style="margin-bottom: 1.5%;">
+                         <div style="width: 55%; margin-left: 20%" >
+                                <canvas id="canvas"></canvas>
+                            </div>
+                       </div>
+                       
+                    <div  style="margin: 0% 10%;">
+                        <h4 class="text-center">FILTER RESULT</h4>
+                    
+                   <div class="card  card-filter" style="width: 100%;">
+                           <div class="card-body">
+                             <div class="row">
+                                   <div class=" col-12 col-md-6 border-class" style="">
+                                       <h5 class="source text-center">Source</h5><br>
+                                       <div class="row">
+                                         <div class="col-12 col-md-6">
+                                           <ul>
+                                               <input type="checkbox" name="Facebook" value="Fb"> Facebook<br><br>
+                                               <input type="checkbox" name="Twitter" value="Tw"> Twitter<br><br>
+                                               <input type="checkbox" name="Instagram" value="In"> Instagram<br>
+                                           </ul>
+                                         </div>
+                                         <div class=" col-12 col-md-6">
+                                           
+                                             <ul>
+                                                 <input type="checkbox" name="Facebook" value="Fb"> Blogs<br><br>
+                                                 <input type="checkbox" name="Twitter" value="Tw"> News<br><br>
+                                                 <input type="checkbox" name="Instagram" value="In"> Web<br>
+                                             </ul>
+                                         </div>
+                                       </div>    
+                                    </div>
+
+                                     <div class=" col-12 col-md-6">
+                                        <h5 class="source text-center">Sentiments</h5><br>
+                                        <ul>
+                                               <input type="checkbox" name="Facebook" value="Fb"> Positive<br><br>
+                                               <input type="checkbox" name="Twitter" value="Tw"> Negative<br><br>
+                                               <input type="checkbox" name="Instagram" value="In"> Neutral<br>
+                                        </ul>
+                                        
+                                        <a class="btn btn-sm btn-outline-success btn-reset" href="#">Reset Filter</a>
+
+                                     </div>
+
+
+                             </div>
+                          
+                           </div>
+                         </div>
+                     </div>
+
+            <!-- </main>   -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+          var barChartData = {
+              labels: ["January", "February", "March", "April", "May", "June", "July"],
+              datasets: [{
+                  label: 'Dataset 1',
+                  backgroundColor: window.chartColors.red,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
+              }, {
+                  label: 'Dataset 2',
+                  backgroundColor: window.chartColors.blue,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
+              }, {
+                  label: 'Dataset 3',
+                  backgroundColor: window.chartColors.green,
+                  data: [
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor(),
+                      randomScalingFactor()
+                  ]
+              }]
+
+          };
+          window.onload = function() {
+              var ctx = document.getElementById("canvas").getContext("2d");
+              window.myBar = new Chart(ctx, {
+                  type: 'bar',
+                  data: barChartData,
+                  options: {
+                      title:{
+                          display:true,
+                          text:" "
+                      },
+                      tooltips: {
+                          mode: 'index',
+                          intersect: false
+                      },
+                      responsive: true,
+                      scales: {
+                          xAxes: [{
+                              stacked: true,
+                          }],
+                          yAxes: [{
+                              stacked: true
+                          }]
+                      }
+                  }
+              });
+          };
+
+          document.getElementById('randomizeData').addEventListener('click', function() {
+              barChartData.datasets.forEach(function(dataset, i) {
+                  dataset.data = dataset.data.map(function() {
+                      return randomScalingFactor();
+                  });
+              });
+              window.myBar.update();
+          });
+      </script>
+
+      </body>
+</html>
