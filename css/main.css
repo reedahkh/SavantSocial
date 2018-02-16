@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+
+.row{
+    margin-left: 1%;
+}
+
+h5{
+    float: right;
+}
+
+.fa-globe , .fa-twitter , .fa-pinterest-square , .fa-instagram , .fa-facebook-f ,.fa-database{
+    font-size: 40px;
+    color: #00aced;
+    
+}
+
+.fa-sync-alt{
+    color: #D3D3D3;
+}
+
+.card-link{
+    color: #D3D3D3;
+    margin-top: 30%;
+    font-size: 10px;
+}
+
+.no{
+    float: right;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: -40%;
+}
+
+#canvas{
+    /* margin-left: 10%; */
+    margin-top: 7%;
+}
+
+h4{
+    /* margin-left: 10%; */
+}
+.lol{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.lal{
+    margin-top: -1%;
+    margin-left: 10%;
+    color: #D3D3D3;
+}

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <title>Settings Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/dashboard.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/charts.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #242424;">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="img/Vector.png" width="65" height="35" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                        
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <ul class="navbar-nav mr-auto">     
+                        <li class="nav-item ">
+                            <i class="fa fa-bell-o"></i>
+                        </li>
+                        <li>
+                            <h5 class="jaiz"><a href="" style="color:white; padding-top: 5%" >Jaiz Bank</a></h5> 
+                        </li>
+                        <li class="nav-item dropdown new-nav">
+                            <button class="btn btn-user btn-sm  dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
+                            </button>
+                            <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <a class="dropdown-item" href="upgrade-plan.html">Upgrade Plan</a>
+                                <a class="dropdown-item" href="#">Signout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <nav style="margin-top: 4%;" class="pl-5">
+      <div class="nav nav-tabs " id="nav-tab" role="tablist">
+        <a class="nav-item nav-link text-dark active" id="nav-account-tab" data-toggle="tab" href="#nav-account" role="tab" aria-controls="nav-home" aria-selected="true" style="font-size: 1.3em">Account</a>
+        <a class="nav-item nav-link text-dark" id="nav-notify-tab" data-toggle="tab" href="#nav-notify" role="tab" aria-controls="nav-profile" aria-selected="false" style="font-size: 1.3em">Notification</a>
+        <a class="nav-item nav-link text-dark" id="nav-team-tab" data-toggle="tab" href="#nav-team" role="tab" aria-controls="nav-contact" aria-selected="false" style="font-size: 1.3em">Team</a>
+        <a class="nav-item nav-link text-dark" id="nav-export-tab" data-toggle="tab" href="#nav-export" role="tab" aria-controls="nav-profile" aria-selected="false" style="font-size: 1.3em">Export</a>
+        <a class="nav-item nav-link text-dark" id="nav-sub-tab" data-toggle="tab" href="#nav-sub" role="tab" aria-controls="nav-contact" aria-selected="false" style="font-size: 1.3em">Subscription</a>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="tab-content pl-5 bg-light" id="nav-tabContent">
+
+        <div class="tab-pane fade show active  pt-5 pb-5" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab">
+            
+          <div class="container container-fluid bg-white pt-5 pb-5 pl-5 pr-5">
+            <header class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="mr-auto">
+                  <p class="h5">My Profile</p>
+                  <p style="opacity: 0.5">Upload an avatar, edit profile and change password.</p>
+              </div>
+              <button class="btn btn-success mt-2"  data-toggle="modal" data-target="" style="border-radius: 0; height: 100%; width: 100px ">
+                  Save
+              </button>
+          </header>
+
+            <div class=" row mx-auto" style="border-bottom: 1px solid #f2f2f2">
+              <div class="col-4 col-md-2 pb-4">
+                <a href="">
+                  <i class="fa fa-user-circle fa-5x text-dark" style="opacity: 0.5; font-size: 8em"></i>
+                </a>
+                
+              </div>
+              <div class="col-4 col-md-5 pt-3">
+                <p class="h5">Avatar</p>
+                <p style="opacity: 0.7">Recommended size; 200 X 200 <br> File type; png, jpg and jpeg</p>
+              </div>
+              <div class="col-4 col-md-5 pt-4">
+                <input class="btn btn-lg bg-white" type="file"  style="opacity: 0.5; border:1px solid #828282; border-radius: 0"></input>
+              </div>
+            </div>
+            
+            <div class="pt-4 pb-2 mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <form>
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <label for="inputEmail4">Full Name</label>
+                    <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <label for="inputEmail4"> Phone Number</label>
+                    <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                  </div>
+                </div>
+              </form>
+
+              <form>
+                <div class="row mt-4">
+                  <div class="col-12 col-md-4">
+                   <p class="mb-2">Country</p>
+                   <select style="width: 100%; border-color: #ced4da; height: 40px;" class="mb-5">
+                     <option></option>
+                     <option value="volvo">Nigeria</option>
+                   </select>
+                  </div>
+                  <div class="col-12 col-md-4">
+                     <p class="mb-2">State</p>
+                     <select style="width: 100%; border-color: #ced4da; height: 40px;" class="mb-5">
+                       <option></option>
+                       <option value="volvo">Abuja</option>
+                       <option value="saab">Lagos</option>
+                       <option value="saab">Port-Harcourt</option>
+                     </select>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <p class="mb-2">Language</p>
+                    <select style="width: 100%; border-color: #ced4da; height: 40px;" class="mb-5">
+                      <option></option>
+                      <option value="volvo">English</option>
+                      <option value="saab">French</option>
+                    </select>
+                     </div>
+                </div>
+              </form>
+            </div>
+                  
+            <div class="mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <p class="h5">Your Company</p>
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <label for="inputEmail4">Company Name</label>
+                  <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                </div>
+
+                <div class="col-12 col-md-4">
+                   <p class="mb-2">Company Size</p>
+                   <select style="width: 100%; border-color: #ced4da; height: 40px;" class="mb-5">
+                     <option></option>
+                     <option value="volvo">1 Employee</option>
+                     <option value="saab">2-10 Employees</option>
+                     <option value="volvo">11-50 Employees</option>
+                     <option value="saab">51-100 Employees</option>
+                     <option value="volvo">101-1000 Employees</option>
+                     <option value="saab">1000+ Employees</option>
+                   </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <p class="h5">Your Company</p>
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <label for="inputEmail4">Current Password</label>
+                  <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                </div>
+
+                <div class="col-12 col-md-4">
+                   <label for="inputEmail4">New Password</label>
+                   <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                </div>
+
+                <div class="col-12 col-md-4">
+                   <label for="inputEmail4">Verify Password</label>
+                   <input type="text" class="form-control" placeholder="" style="border-radius: 0">
+                </div>
+
+              </div>
+
+              <div class=" d-flex justify-content-end mt-4 mb-5">
+                <button class="btn btn-success " style="border-radius: 0">Change</button>
+              </div>
+            </div>
+
+            <div class="pt-5">
+              <p class="h5 mt-2"> Delete Your Account</p>
+              <p>We do our best to make you happy, so we are sad that you want to leave us</p>
+              <button type="button" class="btn bg-white text-primary" data-toggle="modal" data-target="#DeleteModal">
+                Delete your account
+              </button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane fade  pt-5 pb-5" id="nav-notify" role="tabpanel" aria-labelledby="nav-notify-tab">
+            
+          <div class="container container-fluid bg-white pt-5 pb-5 pl-5 pr-5">
+            <header class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="mr-auto">
+                  <p class="h5">Notifications</p>
+                  <p style="opacity: 0.5">Manage your savant social notifications</p>
+              </div> 
+            </header>
+
+            <div class=" mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="mr-auto">
+                <p class="h5">Savant Alert</p>
+                <p style="opacity: 0.5">Receive notifications in real time through email or text message when we detect an increase in you or your competitors activity</p>
+              </div>
+              
+              <div class="d-flex">
+                <div style="display: block;" class="mr-5">
+                  <p class="mb-0 h6">Email Sensitivity</p>
+                  <select style="width: 300px; height: 40px;  border-color: #ced4da;" class="mb-5">
+                      <option> </option>
+                      <option value="volvo">Important Increase</option>
+                      <option value="saab">Very Important Increase</option>
+                      <option value="saab">Very Important Inc</option>
+                  </select>
+                </div>
+
+                <div style="display: block;">
+                    <p class="mb-0 h6">SMS Sensitivity</p>
+                    <select style="width: 300px; height: 40px; border-color: #ced4da;" class="mb-5">
+                        <option> </option>
+                      <option value="volvo">Important Increase</option>
+                      <option value="saab">Very Important Increase</option>
+                      <option value="saab">Very Important Inc</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class=" mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="mr-auto">
+                <p class="h5">Savant Alert Notifications</p>
+                <p style="opacity: 0.5">Receive notifications for your savant social alert at the frequency of your choice, allowing you to stay updated</p>
+              </div>
+              
+              <div class="d-flex">
+                <div style="display: block;" class="mr-5">
+                  <p class="mb-0 h6">Email Frequency</p>
+                  <select style="width: 300px; height: 40px;  border-color: #ced4da;" class="mb-5">
+                      <option> </option>
+                    <option value="volvo">Daily</option>
+                    <option value="saab">Weekly</option>
+                    <option value="saab">Never</option>
+                  </select>
+                </div>
+
+                <div style="display: block;">
+                  <p class="mb-0 h6">Desktop Frequency</p>
+                  <select style="width: 300px; height: 40px;  border-color: #ced4da;" class="mb-5">
+                      <option> </option>
+                      <option value="volvo">Instantly</option>
+                      <option value="saab">15 Mins</option>
+                      <option value="saab">30 Mins</option>
+                      <option value="saab">Hourly</option>
+                      <option value="saab">Daily</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+                  
+            <div class=" mb-5">
+              <div class="mr-auto">
+                <p class="h5">Unsubscribe Notifications</p>
+                <p style="opacity: 0.9">Here you can unsubscribe to all savant social notifications at once.</p>
+              </div>
+              
+              <div style="display: block;">
+                <div class="d-flex mb-2 mt-4">
+                  <label class="switch mr-3">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-1" style="opacity: 0.5"> Unsubscribe me from all email notifications</p>
+                </div>
+                
+                <div  class="d-flex mt-2">
+                  <label class="switch mr-3">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="mt-1" style="opacity: 0.5"> Unsubscribe me from all marketing notifications</p>
+                </div>
+
+                <div class=" d-flex justify-content-end">
+                  <button class="btn btn-success " style="border-radius: 0; width: 10%">Save</button>
+                </div>
+
+              </div>
+            </div>     
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade  pt-5 pb-5" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab">
+
+            
+          <div class="container container-fluid bg-white pt-5 pb-5 pl-5 pr-5">
+
+            <header class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+                <div class="mr-auto">
+                    <p class="h5">Manage Your Team</p>
+                    <p style="opacity: 0.5">Add members, control access.</p>
+                </div>
+                <button class="btn btn-success mt-2"  data-toggle="modal" data-target="#exampleModalLong" style="border-radius: 0; height: 100% ">
+                    <i class="fa fa-plus"></i> &nbsp;&nbsp;Add Member
+                </button>
+            </header>
+            
+            <p style="opacity: 0.5; font-size: 1.5em" >These are your team mates, use permission button to restrict their access</p>
+            <table class="table table-hover table-bordered mt-4  text-center">
+
+              <thead class="thead-light">
+                <tr>
+                  <!-- <th scope="col">#</th> -->
+                  <th scope="col" class="h5">Name</th>
+                  <th scope="col" class="h5">Role</th>
+                  <th scope="col" class="h5">Savant Profile</th>
+                  <th scope="col" class="h5">Permission</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe<br>johndoe@gmail.com</td>
+                  <td>Administrator</td>
+                  <td>Jaiz,Fidelity, Gtbank</td>
+                  <td>
+                   <a href="" class=""  data-toggle="modal" data-target="#exampleModalLong-2">
+                      <div class="fa-2x">
+                        <span class="fa-layers fa-fw" style="background:#fff; border: 1px solid #f2f2f2">
+                          <i class="fa fa-key" style="color:Tomato"></i>
+                         <!-- <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i> -->
+                        </span>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>John Doe<br>johndoe@gmail.com</td>
+                  <td>Manager</td>
+                  <td>Jaiz,Fidelity, Gtbank</td>
+                  <td>
+                    <a href="">
+                      <div class="fa-2x">
+                        <span class="fa-layers fa-fw" style="background:#fff; border: 1px solid #f2f2f2">
+                          <i class="fa fa-key" style="color:Tomato"></i>
+                          <!-- <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i> -->
+                        </span>
+                      </div>
+                    </a>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>            
+          </div>
+        
+
+        </div>
+
+
+        <div class="tab-pane fade pt-5 pb-5" id="nav-export" role="tabpanel" aria-labelledby="nav-export-tab">
+            
+
+            <div class="container container-fluid bg-white pt-5  pb-5 pl-5 pr-5">
+                <header class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+                    <div class="mr-auto">
+                        <p class="h5">Exports</p>
+                        <p style="opacity: 0.5">Download your analytics dashboard</p>
+                    </div>
+                    <button class="btn btn-success mt-2" style="border-radius: 0; height: 100% ">
+                        Download
+                    </button>
+                </header>
+                
+                <p class="h5">Download History</p>
+                <p style="opacity: 0.5; font-size: 1.5em" >Below is your dashboard download history overtime</p>
+                <table class="table table-hover table-bordered mt-4  text-center">
+
+                  <thead class="thead-light">
+                    <tr>
+                      <!-- <th scope="col">#</th> -->
+                      <th scope="col" class="h5">Profile</th>
+                      <th scope="col" class="h5">Downloaded By</th>
+                      <th scope="col" class="h5">Role</th>
+                      <th scope="col" class="h5">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jaiz Dashboard</td>
+                      <td>John Doe</td>
+                      <td>Administrator</td>
+                      <td>15-01-2018</td>
+                    </tr>
+                    <tr>
+                      <td>Jaiz Dashboard</td>
+                      <td>John Doe</td>
+                      <td>Manager</td>
+                      <td>20-01-2018</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>            
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade   pt-5 pb-5" id="nav-sub" role="tabpanel" aria-labelledby="nav-sub-tab">
+            
+          <div class="container container-fluid bg-white pt-5 pb-5 pl-5 pr-5">
+            <header class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="mr-auto">
+                  <p class="h5">Subscription</p>
+                  <p style="opacity: 0.5">Monitor and upgrade your plan</p>
+              </div> 
+            </header>
+
+            <div class=" mb-5 pb-4" style="border-bottom: 1px solid #f2f2f2">
+              <div class="d-flex mb-5" style="border-bottom: 1px solid #f2f2f2">
+                <div class="mr-auto">
+                    <p class="h5">Monitor Plan</p>
+                    <p style="opacity: 0.5">Below is your dashboard usage for current plan</p>
+                </div> 
+              </div>
+            
+              <table class="table table-hover table-bordered mt-4  text-center">
+
+                <thead class="thead-light">
+                  <tr>
+                    <!-- <th scope="col">#</th> -->
+                    <th scope="col" class="h5">Profile</th>
+                    <th scope="col" class="h5">Team Members</th>
+                    <th scope="col" class="h5">Role</th>
+                    <th scope="col" class="h5">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Jaiz Bank</td>
+                    <td class="d-flex">
+                      <div class="mr-3" style="border: 1px solid #f2f2f2; border-radius: 50%; width: 10%; height: 10%; padding-top: 1.5%; padding-bottom: 0;">
+                        <p>JD</p>
+                      </div> 
+                      <div style="border: 1px solid #f2f2f2; border-radius: 50%; width: 10%; height: 5%; padding-top: 1.5%; padding-bottom: 0;">
+                        <p>JD</p>
+                      </div>
+                    </td>
+                    <td>Administrator</td>
+                    <td>
+                     <a href="" class="" >
+                        <div class="fa-2x">
+                          <span class="fa-layers fa-fw" style="background:#fff; border: 1px solid #f2f2f2; padding: 1% 4%">
+                            <i class="fa fa-trash" style="color:#000"></i>
+                           <!-- <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i> -->
+                          </span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Fidelity Bank</td>
+                    <td>
+                      <div style="border: 1px solid #f2f2f2; border-radius: 50%; width: 10%; height: 10%; padding-top: 1.5%; padding-bottom: 0;">
+                        <p>JD</p>
+                      </div>
+                    </td>
+                    <td>Manager</td>
+                    <td>
+                      <a href="">
+                        <div class="fa-2x">
+                          <span class="fa-layers fa-fw" style="background:#fff; border: 1px solid #f2f2f2; padding: 1% 4%">
+                            <i class="fa fa-trash" style="color:#000"></i>
+                            <!-- <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i> -->
+                          </span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+                 
+                  <tr>
+                    <td>Gtbank</td>
+                    <td>
+                      <div style="border: 1px solid #f2f2f2; border-radius: 50%; width: 10%; height: 10%; padding-top: 1.5%; padding-bottom: 0;">
+                        <p>JD</p>
+                      </div>
+                    </td>
+                    <td>Manager</td>
+                    <td>
+                      <a href="">
+                        <div class="fa-2x">
+                          <span class="fa-layers fa-fw" style="background:#fff; border: 1px solid #f2f2f2; padding: 1% 4%">
+                            <i class="fa fa-trash" style="color:#000"></i>
+                            <!-- <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i> -->
+                          </span>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table> 
+            </div> 
+
+
+            <div class=" mb-5" style="border-bottom: 1px solid #f2f2f2">
+              <div class="">
+                  <p class="h5">Current Plan</p>
+                  <p style="opacity: 0.5">Here is a summary of your plan</p>
+              </div> 
+
+              <div class="table table-hover mt-4 w-25">
+                <div class="table-bordered pt-4 pb-2">
+                  <p class="pl-3 pr-3 font-weight-bold">N0.00 FREE TRIAL(14 Days)</p>
+                </div>
+                <div class="table-bordered pt-4 pb-4 pr-3 pl-3">
+                  <div class="row pl-3 pr-3">
+                      <div class="col-10 col-md-10">
+                          <p class="">4 Profiles</p>
+                      </div>
+
+                      <div class="col-2 col-md-2">
+                          <i class="fa fa-check-circle mt-1 text-success" style="font-size: 1em"></i>
+                      </div>
+                  </div>
+                  <div class="row pl-3 pr-3">
+                      <div class="col-10 col-md-10">
+                          <p class="">4 Team Members</p>
+                      </div>
+
+                      <div class="col-2 col-md-2">
+                          <i class="fa fa-check-circle mt-1 text-success" style="font-size: 1em"></i>
+                      </div>
+                  </div>
+                  <div class="row pl-3 pr-3">
+                      <div class="col-10 col-md-10">
+                          <p class="">Analytics</p>
+                      </div>
+
+                      <div class="col-2 col-md-2">
+                          <i class="fa fa-check-circle mt-1 text-success" style="font-size: 1em"></i>
+                      </div>
+                  </div>
+                  <div class="row pl-3 pr-3">
+                      <div class="col-10 col-md-10">
+                          <p class="">Social Media Integration</p>
+                      </div>
+
+                      <div class="col-2 col-md-2">
+                          <i class="fa fa-check-circle mt-1 text-success" style="font-size: 1em"></i>
+                      </div>
+                  </div>
+                  <div class="row pl-3 pr-3">
+                      <div class="col-10 col-md-10">
+                          <p class="">Trend Monintoring</p>
+                      </div>
+
+                      <div class="col-2 col-md-2">
+                          <i class="fa fa-check-circle mt-1 text-success" style="font-size: 1em"></i>
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+
+            
+            <a href="upgrade-plan.html">
+              <button class="btn btn-success mt-2 mb-5"  style="border-radius: 0; height: 100%; width: 20% ">
+                  Upgrade Plan
+              </button>
+            </a>
+                  
+                </div>
+          </div>
+
+
+        </div>
+    </div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+       <div class="modal-dialog  pt-5" role="document">
+         <div class="modal-content mt-5" style="border-radius: 0">
+           
+           <div class="modal-body">
+             
+             
+             <div class="d-flex mt-3 mb-3">
+               <p class="mr-auto"></p>
+               <p class="mr-auto h5 text-center">Add Team Member</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <p style="opacity: 0.8" class=" text-center">
+                 Invite team members via email
+             </p>
+             <form class="pl-5 pr-5">
+                 <div class="form-group mb-3">
+                     <label for="exampleInputEmail1">Name</label>
+                     <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" style="border-radius: 0;  border-color: #ced4da; margin-top: -2%">
+                 </div>
+                 <div class="form-group mb-3">
+                     <label for="exampleInputPassword1" >Email Address</label>
+                     <input type="password" class="form-control " id="exampleInputPassword1" placeholder="" style="border-radius: 0;  border-color: #ced4da; margin-top: -2%">
+                 </div>
+                 <p class="mb-0">Account Type</p>
+                 <select style="width: 100%;  border-color: #ced4da; height: 40px;" class="mb-5">
+                   <option value="volvo">manager</option>
+                   <option value="saab">Administrator</option>
+                 </select>
+                  <div class=" d-flex justify-content-end">
+                    <button class="btn btn-success " style="border-radius: 0">Send</button>
+                  </div>
+             </form>
+
+           </div>
+           
+         </div>
+       </div>
+     </div>  
+
+
+
+    <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog  pt-5" role="document">
+              <div class="modal-content mt-5" style="border-radius: 0">
+                <div class="modal-header pl-5 pr-5">
+                  <div class="" style="display: block;">
+                    <p class="mt-3 h5  mb-0 ">
+                      John Doe <span class="bg-success text-white pt-0 pr-1 pb-0  pl-1" style="font-size: 0.5em;">Admin</span>
+                    </p>
+                    <p  class="mt-0" style="font-size: 0.8em">johndoe@gmail.com</p>
+                  </div>
+                 <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                 </button>
+                </div>
+                <div class="modal-body  ">
+                  
+                  <div class="row pl-5 pr-5">
+                    <p class="h5 mr-auto">Profiles</p>
+                    <p class="h5">Access</p>
+                  </div>
+
+                  <div class="container  pl-3 pr-3 mb-4 ">
+                    <div class="row bg-light pl-2 pr-2 pt-3 pb-0">
+                      <i class="fa fa-genderless fa-sm text-success mr-3"></i>
+                      <p class="h6 mr-auto">Jaiz Bank</p>
+                      <div class="">
+                        <label class="switch-2">
+                          <input type="checkbox">
+                          <span class="slider-2 round-2"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row  bg-light pl-2 pr-2 pt-3 pb- mt-2">
+                      <i class="fa fa-genderless fa-sm text-danger mr-3"></i>
+                      <p class="h6 mr-auto">Gtbank</p>
+                      <div class="">
+                        <label class="switch-2">
+                          <input type="checkbox">
+                          <span class="slider-2 round-2"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row bg-light pl-2 pr-2 pt-3 pb-0 mt-2">
+                      <i class="fa fa-genderless fa-sm text-primary mr-3"></i>
+                      <p class="h6 mr-auto">Fidelity</p>
+                      <div class="">
+                        <label class="switch-2">
+                          <input type="checkbox">
+                          <span class="slider-2 round-2"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class=" d-flex justify-content-end">
+                    <button class="btn btn-success " style="border-radius: 0">Save</button>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+          </div>   
+
+
+
+          <div class="modal" tabindex="-1" role="dialog" id="DeleteModal" >
+            <div class="modal-dialog pt-5 pb-5" role="document">
+              <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                
+                 
+                <div class="modal-body pb-5">
+                  <div class="d-flex mt-3 mb-3">
+                    <p class="mr-auto"></p>
+                    <p class="mr-auto h5 text-center">Delete Your Account</p>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <p class="text-center">This action cannot be undone. Are you sure?</p>
+
+                  <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                    <button class="btn btn-danger mr-auto" style="border-radius: 0">Delete My Account</button>
+                    <!-- <div class="mr-5"></div> -->
+                    <button class="btn btn-secondary " style="border-radius: 0; width: 150px">Cancel</button>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+
+
+
+
+      <!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>            

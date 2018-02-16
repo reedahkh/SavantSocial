@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Savant Metrics</title>
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!--Main Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/charts.css">
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/utils.js"></script>
+        <style>
+        canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        </style>
+</head>
+<body>
+        <header>
+                <!-- Fixed navbar -->
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #242424;">
+                        
+                                <img src="img/Vector.png" width="65" height="35" class="d-inline-block align-top" alt="">
+                              
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                    
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                            <ul class="navbar-nav mr-auto">
+                                 
+                                    <li class="nav-item ">
+                                            <i class="fa fa-bell-o"></i>
+                                        </li>
+                                        <li>
+                                            <h5 class="jaiz"><a href="" style="color:white; padding-top: 5%" >Jaiz Bank</a></h5> 
+                                        </li>
+                                        <li class="nav-item dropdown new-nav">
+                                                <button class="btn btn-user btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i> <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
+                                                </button>
+                                                <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
+                                                    <a class="dropdown-item" href="#">Settings</a>
+                                                    <a class="dropdown-item" href="#">Upgrade Plan</a>
+                                                    <a class="dropdown-item" href="#">Signout</a>
+                                                </div>
+                                            </li>
+                            </ul>
+                    </form>
+                  </div>
+                </nav>
+              </header><br><br><br>
+
+
+              <div class="container-fluid pt-3">
+                <div class="row">
+                  <nav class="col-md-2 d-none d-md-block bg-light sidebar pt-4">
+                    <div class="sidebar-sticky ">
+                      <ul class="nav flex-column">
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="dashboard.html" style="color: #ff6600">
+                            <i class="fa fa-tachometer fa-fw"></i>
+                            Dashboard <span class="sr-only">(current)</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Products</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                        </a>
+                      </h6>
+                      <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
+                            <i class="fa fa-briefcase fa-fw"></i>
+                            Savant Business
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="savantsocial.html">
+                            <i class="fa fa-line-chart fa-fw"></i>
+                            Savant Social
+                          </a>
+                        </li>
+                      </ul>
+                      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Settings</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                        </a>
+                      </h6>
+                      <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                          <a class="nav-link" href="reach.html">
+                            <i class="fa fa-cog fa-fw"></i>
+                            Settings
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="reach.html">
+                            <i class="fa fa-credit-card fa-fw"></i>
+                            Subscriptions
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="btn btn-outline-danger btn1 btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</button>
+                      <div class="dropdown-menu" aria-labelledby="dropdown07">
+                        <a class="dropdown-item" href="#">Getting Started</a>
+                        <a class="dropdown-item" href="#">FAQ</a>
+                        <a class="dropdown-item" href="#">Signout</a>
+
+                      </div>
+                    </div>
+                  </nav>
+
+
+
+
+
+                  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-0">
+                           <div class="row">
+                                   <div class="col-md-3">
+                                       <div class="card" ">
+                                           <div class="card-body">
+                                           <h5 class="card-title">Data Pipes <br></h5>
+                                           <i class="fa fa-database"></i>
+                                           <p class="no">4</p>
+                                           <p class="card-text"></p>
+                                           <i class="fa fa-sync-alt"></i>
+                                           <a href="#" class="card-link">Updated now</a>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div class="col-md-3">
+                                           <div class="card" ">
+                                               <div class="card-body">
+                                               <h5 class="card-title">Data Size <br></h5>
+                                               <i class="fa fa-database"></i>
+                                               <p class="no">110GB</p>
+                                               <p class="card-text"></p>
+                                               <i class="fa fa-sync-alt"></i>
+                                               <a href="#" class="card-link">Updated now</a>
+                                               </div>
+                                           </div><br>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                   <div class="card-body">
+                                                   <h5 class="card-title">Crawl Errors<br></h5>
+                                                   <i class="fa fa-globe"></i>
+                                                   <p class="no">23</p>
+                                                   <p class="card-text"></p>
+                                                   <i class="fa fa-sync-alt"></i>
+                                                   <a href="#" class="card-link">In the last hour</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                            
+
+                                           <div class="col-md-3">
+                                                   <div class="card" >
+                                                           <div class="card-body">
+                                                           <h5 class="card-title">Data Size <br></h5>
+                                                           <i class="fa fa-twitter"></i>
+                                                           <p class="no">110GB</p>
+                                                           <p class="card-text"></p>
+                                                           <i class="fa fa-sync-alt"></i>
+                                                           <a href="#" class="card-link">Updated now</a>
+                                                           </div>
+                                                       </div>
+                                           </div>
+                                       
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-twitter"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-pinterest-square"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                       <div class="col-md-3">
+                                               <div class="card" >
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">Data Size <br></h5>
+                                                       <i class="fa fa-instagram"></i>
+                                                       <p class="no">110GB</p>
+                                                       <p class="card-text"></p>
+                                                       <i class="fa fa-sync-alt"></i>
+                                                       <a href="#" class="card-link">Updated now</a>
+                                                       </div>
+                                                   </div>
+                                       </div>
+
+                                           <div class="col-md-3">
+                                                   <div class="card" >
+                                                           <div class="card-body">
+                                                           <h5 class="card-title">Data Size <br></h5>
+                                                           <i class="fa fa-facebook-f"></i>
+                                                           <p class="no">110GB</p>
+                                                           <p class="card-text"></p>
+                                                           <i class="fa fa-sync-alt"></i>
+                                                           <a href="#" class="card-link">Updated now</a>
+                                                           </div>
+                                                       </div>
+                                           </div>
+                             
+                                  
+                             
+                                         
+                                           <div style="width:85%; height:100%;" class="mx-auto">
+                                                   <h4 class="lol">Post Trends</h4>
+                                                   <p class="lal">24 Hours Performance</p>
+                                                   <canvas id="canvas"></canvas>
+                                               </div>
+                                             
+                              
+                </main>
+              </div>
+                   <script>
+                            var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                            var config = {
+                                type: 'line',
+                                data: {
+                                    labels: ["9:00AM", "12:00AM", "3:00PM", "6:00PM", "9:00PM", "12:00PM", "6:00PM"],
+                                    datasets: [{
+                                        label: "My First dataset",
+                                        borderColor: window.chartColors.red,
+                                        backgroundColor: window.chartColors.red,
+                                        data: [
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor()
+                                        ],
+                                    }, {
+                                        label: "My Second dataset",
+                                        borderColor: window.chartColors.blue,
+                                        backgroundColor: window.chartColors.blue,
+                                        data: [
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor()
+                                        ],
+                                    }, {
+                                        label: "My Third dataset",
+                                        borderColor: window.chartColors.green,
+                                        backgroundColor: window.chartColors.green,
+                                        data: [
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor()
+                                        ],
+                                    }, {
+                                        label: "My Third dataset",
+                                        borderColor: window.chartColors.yellow,
+                                        backgroundColor: window.chartColors.yellow,
+                                        data: [
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor(),
+                                            randomScalingFactor()
+                                        ],
+                                    }]
+                                },
+                                options: {
+                                    responsive: true,
+                                    title:{
+                                        display:false,
+                                        text:"Chart.js Line Chart - Stacked Area"
+                                    },
+                                    tooltips: {
+                                        mode: 'index',
+                                    },
+                                    hover: {
+                                        mode: 'index'
+                                    },
+                                    scales: {
+                                        xAxes: [{
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: 'Month'
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            stacked: true,
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: 'Value'
+                                            }
+                                        }]
+                                    }
+                                }
+                            };
+                    
+                            window.onload = function() {
+                                var ctx = document.getElementById("canvas").getContext("2d");
+                                window.myLine = new Chart(ctx, config);
+                            };
+                    
+                            document.getElementById('randomizeData').addEventListener('click', function() {
+                                config.data.datasets.forEach(function(dataset) {
+                                    dataset.data = dataset.data.map(function() {
+                                        return randomScalingFactor();
+                                    });
+                    
+                                });
+                    
+                                window.myLine.update();
+                            });
+                    
+                            var colorNames = Object.keys(window.chartColors);
+                            document.getElementById('addDataset').addEventListener('click', function() {
+                                var colorName = colorNames[config.data.datasets.length % colorNames.length];
+                                var newColor = window.chartColors[colorName];
+                                var newDataset = {
+                                    label: 'Dataset ' + config.data.datasets.length,
+                                    borderColor: newColor,
+                                    backgroundColor: newColor,
+                                    data: [],
+                                };
+                    
+                                for (var index = 0; index < config.data.labels.length; ++index) {
+                                    newDataset.data.push(randomScalingFactor());
+                                }
+                    
+                                config.data.datasets.push(newDataset);
+                                window.myLine.update();
+                            });
+                    
+                            document.getElementById('addData').addEventListener('click', function() {
+                                if (config.data.datasets.length > 0) {
+                                    var month = MONTHS[config.data.labels.length % MONTHS.length];
+                                    config.data.labels.push(month);
+                    
+                                    config.data.datasets.forEach(function(dataset) {
+                                        dataset.data.push(randomScalingFactor());
+                                    });
+                    
+                                    window.myLine.update();
+                                }
+                            });
+                    
+                            document.getElementById('removeDataset').addEventListener('click', function() {
+                                config.data.datasets.splice(0, 1);
+                                window.myLine.update();
+                            });
+                    
+                            document.getElementById('removeData').addEventListener('click', function() {
+                                config.data.labels.splice(-1, 1); // remove the label first
+                    
+                                config.data.datasets.forEach(function(dataset, datasetIndex) {
+                                    dataset.data.pop();
+                                });
+                    
+                                window.myLine.update();
+                            });
+                        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--Bootstrap JS, JQuery and Popper JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

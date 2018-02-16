@@ -98,6 +98,7 @@ a:hover{
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 600px){
     .container{
         width: 90%;
@@ -109,5 +110,23 @@ a:hover{
     }
     .container-1{
         margin-left: 6%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    
+
+    .side-img{
+        height: 613px;
+        overflow-y: hidden;
+    }
+}
+@media only screen and (max-width: 1440px){
+    
+
+    .side-img{
+        height: 817px;
     }
 }
