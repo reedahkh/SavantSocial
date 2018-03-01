@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <title>Savant Social Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="css/charts.css" rel="stylesheet">
+</head>
+<style>
+        .navbar{
+            height: 8%;
+        }
+        </style>
+<body>
+        <header>
+                <!-- Fixed navbar -->
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #242424;">
+                    <a class="navbar-brand" href="dashboard.html">
+                        <img src="img/Vector.png"  width="75" height="50" class="d-inline-block align-top" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                                
+                        </ul>
+                        <form class="form-inline mt-2 mt-md-0">
+                            <ul class="navbar-nav mr-auto">     
+                                <li class="nav-item ">
+                                    <i class="fa fa-bell-o"></i>
+                                </li>
+                                <li>
+                                    <h5 class="jaiz"><a href="" style="color:white; padding-top: 6%" >Jaiz Bank</a></h5> 
+                                </li>
+                                <li class="nav-item dropdown new-nav">
+                                    <button class="btn btn-user btn-sm  dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                                            <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
+                                    </button>
+                                    <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <a class="dropdown-item" href="#">Upgrade Plan</a>
+                                        <a class="dropdown-item" href="#">Signout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </nav>
+            </header> <br><br> <br>
+            
+            <!--Header Ends-->
+  
+<div class="row container wow">
+    <i class="fa fa-user-circle fa-5x"></i> 
+   <div class="col-md-6 gt">
+      <h5 id="topsection">@gtbank  <i class="fa fa-check-circle"></i></h5>
+        <p class="word">Enriching Lives Since 1990. Follow us for everything finance and how we empower communities. For help</p>
+   </div>
+</div><hr>
+
+<div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <img src="img/facebook.svg" alt="" srcset="" height="20px" class="img-01" >
+                  <h5 class="card-title text-center"><i class="fa fa-user-plus" style="color:#4F4F4F"></i> 4000 Followers</h5>
+
+                  <canvas class="my-4" id="lChart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <img src="img/facebook.svg" alt="" srcset="" height="20px" class="img-01" >
+                  <h5 class="card-title text-center"><i class="fa fa-heart" style="color:#4F4F4F"></i> 2000 Likes</h5>
+
+                  <canvas class="my-4" id="Chart" width="900" height="500"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <br>
+
+        
+         <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <img src="img/facebook.svg" alt="" srcset="" height="20px" class="img-01" > 
+                <h5 class="card-title text-center"> <i class="fa fa-comment" style="color:#4F4F4F"></i> 200 Comments</h5>
+
+                <canvas class="my-4" id="pChart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                  <img src="img/facebook.svg" alt="" srcset="" height="20px" class="img-01" >
+                <h5 class="card-title text-center"><i class="fa fa-share" style="color:#4F4F4F"></i> 150 Shares</h5>
+
+                <canvas class="my-4" id="peeChart" width="900" height="500"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+<hr>
+      <!-- Twitter Survey -->
+
+     
+
+</div>
+ <div class="container iso">
+  <h3>POST ANALYSIS</h3><br>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-sm" style="font-size: 0.9rem">
+      <tbody>
+        <tr class="table-active tadjust">
+          <td class="font-weight-bold text-center oll">POST</td>
+          <td class="font-weight-bold text-center oll">DATE CREATED</td>
+          <td class="font-weight-bold text-center oll">LIKES</td>
+          <td class="font-weight-bold text-center oll">SHARES</td>
+          <td class="font-weight-bold text-center oll">COMMENTS</td>
+          <td class="font-weight-bold text-center oll">ENGAGEMENTS</td>
+        </tr>
+        <tr>
+          <td class="text-center table-active"><a href="#topsection">It doesn’t matter if I am ten years old or ninety years old,I can still live as if I am great.</a><br></td>
+          <td class="text-center table-active">25th January, 2018 <br> 6:45PM</td>
+          <td class=" text-center text-muted table-active">35</td>
+          <td class=" text-center text-muted table-active">35</td>
+          <td class=" text-center text-muted table-active">35</td>
+          <td class=" text-center text-muted table-active">50</td>
+         
+        </tr>
+        <tr>
+                <td class="text-center" ><a href="#topsection">It doesn’t matter if I am ten years old or ninety years old,I can still live as if I am great.</a><br></td>
+                <td class="text-center">25th January, 2018 <br> 6:45PM</td>
+                <td class="text-center text-muted">35</td>
+                <td class="text-center text-muted">35</td>
+                <td class="text-center text-muted">4500</td>
+                <td class="text-center text-muted">39,500</td>
+         
+        </tr>
+        <tr>
+          <td class="text-center table-active"><a href="#topsection">It doesn’t matter if I am ten years old or ninety years old,I can still live as if I am great.</a><br></td>
+          <td class="text-center table-active">25th January, 2018 <br> 6:45PM</td>
+          <td class="text-center text-muted table-active">35</td>
+          <td class="text-center text-muted table-active">35</td>
+          <td class="text-center text-muted table-active">35</td>
+          <td class="text-center text-muted table-active">50</td>
+         
+        </tr>
+              <tr>
+                    <td class="text-center"><a href="#topsection">It doesn’t matter if I am ten years old or ninety years old,I can still live as if I am great.</a><br></td>
+                    <td class="text-center">25th January, 2018 <br> 6:45PM</td>
+                    <td class="text-center text-muted">35</td>
+                    <td class="text-center text-muted">35</td>
+                    <td class="text-center text-muted">35</td>
+                    <td class="text-center text-muted">50</td>
+              </tr>
+              <tr>
+                <td class="text-center table-active"><a href="#topsection">It doesn’t matter if I am ten years old or ninety years old,I can still live as if I am great.</a><br></td>
+                <td class="text-center table-active">25th January, 2018 <br> 6:45PM</td>
+                <td class="text-center text-muted table-active">35</td>
+                <td class="text-center text-muted table-active">35</td>
+                <td class="text-center text-muted table-active">35</td>
+                <td class="text-center text-muted table-active">50</td>
+               
+              </tr>
+      </tbody>
+    </table>
+
+        <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sort results by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">Like</a>
+                  <a class="dropdown-item" href="#">Shares</a>
+                  <a class="dropdown-item" href="#">Comments</a>
+                  <a class="dropdown-item" href="#">Engagements</a>
+                </div>
+              </div>
+       
+
+        <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        <button class="btn btn-button btn-success text-right float-right" style="border-radius: 0 ; margin-top:-50px;">Export Results</button>
+      </div>
+
+ </div>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+   
+      <script>
+        feather.replace()
+      </script>
+
+       <!-- Graphs -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+       <script>
+            var ctx = document.getElementById("peeChart");
+            var lChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                datasets: [{
+                  data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                  lineTension: 0,
+                  backgroundColor: 'transparent',
+                  borderColor: '#007bff',
+                  borderWidth: 4,
+                  pointBackgroundColor: '#007bff'
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: false
+                    }
+                  }]
+                },
+                legend: {
+                  display: false,
+                }
+              }
+            });
+          </script>
+ 
+ <script type="text/javascript">
+    var ctx = document.getElementById("pChart").getContext('2d');
+    var pChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Male','Female'],
+        datasets: [{
+          label: 'Percentage of followers',
+          data: [60, 40],
+          backgroundColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)'
+          ],
+          borderColor: [
+          'rgba(255,99,132,2)',
+          'rgba(54, 162, 235, 2)'
+          ],
+          borderWidth: 1        
+        }],
+      }
+
+
+
+    });
+  </script>
+ 
+       <script>
+           var ctx = document.getElementById("lChart");
+           var lChart = new Chart(ctx, {
+             type: 'line',
+             data: {
+               labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+               datasets: [{
+                 data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                 lineTension: 0,
+                 backgroundColor: 'transparent',
+                 borderColor: '#007bff',
+                 borderWidth: 4,
+                 pointBackgroundColor: '#007bff'
+               }]
+             },
+             options: {
+               scales: {
+                 yAxes: [{
+                   ticks: {
+                     beginAtZero: false
+                   }
+                 }]
+               },
+               legend: {
+                 display: false,
+               }
+             }
+           });
+         </script>
+ 
+ 
+ <script>
+     var ctx = document.getElementById("Chart").getContext('2d');
+     var Chart = new Chart(ctx, {
+       type: 'bar',
+       data: {
+         labels: ["FCT", "Lagos", "P-Harcourt", "Kano", "Benue", "Other"],
+         datasets: [{
+           label: 'Location of Followers',
+           data: [70, 50, 30, 15, 10, 5],
+           backgroundColor: [
+           'rgba(255, 99, 132, 0.2)',
+           'rgba(54, 162, 235, 0.2)',
+           'rgba(255, 206, 86, 0.2)',
+           'rgba(75, 192, 192, 0.2)',
+           'rgba(153, 102, 255, 0.2)',
+           'rgba(255, 159, 64, 0.2)'
+           ],
+           borderColor: [
+           'rgba(255,99,132,1)',
+           'rgba(54, 162, 235, 1)',
+           'rgba(255, 206, 86, 1)',
+           'rgba(75, 192, 192, 1)',
+           'rgba(153, 102, 255, 1)',
+           'rgba(255, 159, 64, 1)'
+           ],
+           borderWidth: 1
+         }]
+       },
+       options: {
+         scales: {
+           yAxes: [{
+             ticks: {
+               beginAtZero:true
+             }
+           }]
+         }
+       }
+     });
+   </script>
+
+
+ 
+
+
+
+    </body>
+    </html>
