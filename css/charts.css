@@ -2,8 +2,16 @@
 .btn-user{
 background-color: transparent;
 margin-top: -3px;
+outline:none;
 
 }
+
+.btn-user:active, [type="submit"]:focus{
+  background-color: transparent;
+  margin-top: -3px;
+  outline:none;
+  
+  }
 .btn-user:hover{
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -23,11 +31,12 @@ margin-top: -3px;
   .fa-bell-o{
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 30px;
+    font-size: 20px;
     /*color: rgb(193, 193, 190);*/
     color: #fff;
     margin-left: 40px;
     margin-right: 30px;
+    margin-top: 6px;
     /*border-right: #999 solid 1px;*/
     /*border-left: #999 solid 1px;*/
   }
@@ -37,6 +46,9 @@ margin-top: -3px;
   .fa-user-circle-o{
     /*color: rgb(193, 193, 190);*/
     color: #fff;
+    font-size: 20px;
+    margin-top: 6px;
+
   }
  .dropdown:hover{
      color:#fff;
@@ -46,13 +58,20 @@ margin-top: -3px;
    }
   .new-nav{
     margin-right: 90px;
+    border: none;
+  }
+   
+  .btn-outline-secondary:hover{
+    background-color: #fff;
+    color: #333;
   }
 
   .jaiz{
-    margin-right: 30px;
+    margin-right: 28px;
     color: #ffffff;
     text-decoration: none;
     line-height: 30px;
+    font-size: 17px;
   }
 
   .jaiz a:hover{
@@ -111,11 +130,11 @@ margin-top: -3px;
  
 }
 
-.btn-success{
+/* .btn-success{
   margin-left: 70%;
   margin-top: -76px;;
   border-radius: 0;
-}
+} */
 
 .form-control:focus{
   outline:0;
@@ -187,6 +206,10 @@ hr{
 .tadjust:hover{
   background-color: #333333;
   color: #dae0e5;
+}
+
+.okk{
+  color: green;
 }
 
 .t4{

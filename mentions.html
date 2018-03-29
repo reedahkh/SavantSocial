@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Mentions</title>
+
+	<!-- favicon -->
+	<link rel="icon" href="img/savant.png" sizes="16x16" type="image/png">
+	<!-- Bootstrap & Fontawesome CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="css/mentions.css">
+    <link rel="stylesheet" type="text/css" href="css/charts.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+  
+</head>
+<body>
+
+        <style>
+                .navbar{
+                    height: 8%;
+                }
+                </style>
+
+<header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #242424;">
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="img/savantlogo.svg" width="100" height="65" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                        
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    <ul class="navbar-nav mr-auto">     
+                        <li class="nav-item ">
+                            <i class="fa fa-bell-o"></i>
+                        </li>
+                        <li>
+                            <h5 class="jaiz"><a href="" style="color:white; padding-top: 6%" >Jaiz Bank</a></h5> 
+                        </li>
+                        <li class="nav-item dropdown new-nav">
+                            <button class="btn btn-user btn-sm  dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-down text-white" style="font-size: 20px"></i>
+                            </button>
+                            <div class="dropdown-menu text-white" aria-labelledby="dropdown07">
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <a class="dropdown-item" href="#">Upgrade Plan</a>
+                                <a class="dropdown-item" href="#">Signout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+    </header> <br><br> <br>
+    
+    <!--Header Ends-->
+<div class="row ml-5 mt-2">
+
+           <div class="col-12 col-md-2 first_div">
+                    <h3 class="h_1">Jaiz </h3>
+                    <p class="h_1 text-muted">500 Mentions</p>
+                    <hr class="hr_1"> 
+                    <ul class="icons">
+                        <li><i class="fa fa-envelope-open active" aria-hidden="true"></i><a class="inbox" href="#">&nbsp;&nbsp;&nbsp;Inbox</a></li>
+                        <li><i class="fa fa-envelope-open" aria-hidden="true"></i><a class="unread" href="#">&nbsp;&nbsp;&nbsp;Unread</a></li>
+                        <li><i class="fa fa-star" aria-hidden="true"></i><a class="fav" href="#">&nbsp;&nbsp;&nbsp;Favorite</a></li>
+                        <li><i class="fa fa-archive" aria-hidden="true"></i><a class="arch" href="#">&nbsp;&nbsp;&nbsp;Archive</a></li>
+                        <li><i class="fa fa-trash" aria-hidden="true"></i><a class="trash" href="#">&nbsp;&nbsp;&nbsp;Trash</a></li>
+                        <li><i class="fa fa-exclamation-circle" aria-hidden="true"></i><a class="spam" href="#">&nbsp;&nbsp;&nbsp;Spam</a></li>
+                    </ul>
+
+           </div>
+
+
+           <div class="col-12 col-md-5 second_div">
+                <form>
+                        <input type="text" name="search" placeholder="&#x1f50d; Search.." class="border-right-0">
+                        <input type="checkbox" class="ml-3" id="checkbox" data-toggle="modal" data-target="#exampleModalCenter" /> 
+                        <i class="fa fa-filter ml-3" aria-hidden="true"></i>
+                        <!-- Modal -->
+                        <div class="modal" tabindex="-1" role="dialog" id="exampleModalCenter" >
+                                <div class="modal-dialog pt-5 pb-5" role="document">
+                                  <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                                    
+                                     
+                                    <div class="modal-body pb-5">
+                                      <div class="d-flex mt-3 mb-3">
+                                        <p class="mr-auto"></p>
+                                        <p class="mr-auto h5 text-center">Mark All As Read</p>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                    
+                                      <p class="text-center" style="color:#333333;">All your Mentions will be marked as Read</p>
+                                      <div class="check text-muted">
+                                      <input type="checkbox" aria-label="Checkbox for following text input">&nbsp;&nbsp;Don't show me this confirmation in the future again
+                                    </div>
+                                      <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                                        <button class="btn btn-secondary mr-auto" style="border-radius: 0">Cancel</button>
+                                        <!-- <div class="mr-5"></div> -->
+                                        <button class="btn btn-success " style="border-radius: 0; width: 150px">Mark as Read</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div> 
+                      </form>
+                <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                             <div class="col-12 col-md-4">
+                               <img src="img/ellipse.svg">
+                              <p class="ml-5 mt-5"><i class="fa fa-circle" aria-hidden="true"></i></p> 
+                             </div>
+                             <div class="col-12 col-md-8">
+                                    <p class="text-muted">@Okoyecb</p>
+                                    <p class="details">Okoye Chidi B.</p>
+                                    <p class="">..."Jaiz" bank have the best<br>customer service department</p>
+                                      <ul class="ul ul_0">
+                                          <li><i class="fa fa-star mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-trash mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-exclamation-circle mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-ban mr-2" aria-hidden="true" data-toggle="modal" data-target="#ModalCenter"></i></li>
+                                      </ul>
+                                  </div>
+                                   <!-- Modal -->
+                        <div class="modal" tabindex="-1" role="dialog" id="ModalCenter" >
+                                <div class="modal-dialog pt-5 pb-5" role="document">
+                                  <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                                    
+                                     
+                                    <div class="modal-body pb-5">
+                                      <div class="d-flex mt-3 mb-3">
+                                        <p class="mr-auto"></p>
+                                        <p class="mr-auto h5 text-center">Block Mentions</p>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                    
+                                      <p class="text-center h6" style="color:#333333;">Are you sure you want to block all future mentions
+                                            coming from https://twitter.com/Mr_Nixus?</p>
+                                      <div class="check text-muted">
+                                            All future mentions coming from this URL will be blocked and ignored.
+                                            Existing mentions will automatically go to trash
+                                    </div>
+                                      <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                                        <button class="btn btn-secondary mr-auto" style="border-radius: 0">Cancel</button>
+                                        <!-- <div class="mr-5"></div> -->
+                                        <button class="btn btn-danger " style="border-radius: 0; width: 150px">Block</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div> 
+
+                         </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                             <div class="col-12 col-md-4">
+                               <img src="img/ellipse.svg">
+                              <p class="ml-5 mt-5"><i class="fa fa-circle" aria-hidden="true"></i></p> 
+                             </div>
+                             <div class="col-12 col-md-8">
+                                    <p class="text-muted">@Okoyecb</p>
+                                    <p class="details">Okoye Chidi B.</p>
+                                    <p class="">..."Jaiz" bank have the best<br>customer service department</p>
+                                      <ul class="ul ul_0">
+                                          <li><i class="fa fa-star mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-trash mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-exclamation-circle mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-ban mr-2" aria-hidden="true" data-toggle="modal" data-target="#ModalCenter"></i></li>
+                                      </ul>
+                                  </div>
+                                   <!-- Modal -->
+                        <div class="modal" tabindex="-1" role="dialog" id="ModalCenter" >
+                                <div class="modal-dialog pt-5 pb-5" role="document">
+                                  <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                                    
+                                     
+                                    <div class="modal-body pb-5">
+                                      <div class="d-flex mt-3 mb-3">
+                                        <p class="mr-auto"></p>
+                                        <p class="mr-auto h5 text-center">Block Mentions</p>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                    
+                                      <p class="text-center h6">Are you sure you want to block all future mentions
+                                            coming from https://twitter.com/Mr_Nixus?</p>
+                                      <div class="check">
+                                            All future mentions coming from this URL will be blocked and ignored.
+                                            Existing mentions will automatically go to trash
+                                    </div>
+                                      <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                                        <button class="btn btn-secondary mr-auto" style="border-radius: 0">Cancel</button>
+                                        <!-- <div class="mr-5"></div> -->
+                                        <button class="btn btn-danger " style="border-radius: 0; width: 150px">Block</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div> 
+
+                         </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                             <div class="col-12 col-md-4">
+                               <img src="img/ellipse.svg">
+                              <p class="ml-5 mt-5"><i class="fa fa-circle" aria-hidden="true"></i></p> 
+                             </div>
+                             <div class="col-12 col-md-8">
+                                    <p class="text-muted">@Okoyecb</p>
+                                    <p class="details">Okoye Chidi B.</p>
+                                    <p class="">..."Jaiz" bank have the best<br>customer service department</p>
+                                      <ul class="ul ul_0">
+                                          <li><i class="fa fa-star mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-trash mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-exclamation-circle mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-ban mr-2" aria-hidden="true" data-toggle="modal" data-target="#ModalCenter"></i></li>
+                                      </ul>
+                                  </div>
+                                  <!-- Modal -->
+                        <div class="modal" tabindex="-1" role="dialog" id="ModalCenter" >
+                                <div class="modal-dialog pt-5 pb-5" role="document">
+                                  <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                                    
+                                     
+                                    <div class="modal-body pb-5">
+                                      <div class="d-flex mt-3 mb-3">
+                                        <p class="mr-auto"></p>
+                                        <p class="mr-auto h5 text-center">Block Mentions</p>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                    
+                                      <p class="text-center h6">Are you sure you want to block all future mentions
+                                            coming from https://twitter.com/Mr_Nixus?</p>
+                                      <div class="check">
+                                            All future mentions coming from this URL will be blocked and ignored.
+                                            Existing mentions will automatically go to trash
+                                    </div>
+                                      <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                                        <button class="btn btn-secondary mr-auto" style="border-radius: 0">Cancel</button>
+                                        <!-- <div class="mr-5"></div> -->
+                                        <button class="btn btn-danger " style="border-radius: 0; width: 150px">Block</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div> 
+
+                         </div>
+                        </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                         <div class="row">
+                             <div class="col-12 col-md-4">
+                               <img src="img/ellipse.svg">
+                              <p class="ml-5 mt-5"><i class="fa fa-circle" aria-hidden="true"></i></p> 
+                             </div>
+                             <div class="col-12 col-md-8">
+                                    <p class="text-muted">@Okoyecb</p>
+                                    <p class="details">Okoye Chidi B.</p>
+                                    <p class="">..."Jaiz" bank have the best<br>customer service department</p>
+                                      <ul class="ul ul_0">
+                                          <li><i class="fa fa-star mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-trash mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-exclamation-circle mr-2" aria-hidden="true"></i></li>
+                                          <li><i class="fa fa-ban mr-2" aria-hidden="true" data-toggle="modal" data-target="#ModalCenter"></i></li>
+                                      </ul>
+                                  </div> 
+                                  <!-- Modal -->
+                        <div class="modal" tabindex="-1" role="dialog" id="ModalCenter" >
+                                <div class="modal-dialog pt-5 pb-5" role="document">
+                                  <div class="modal-content mt-5 mb-5" style="border-radius: 0">
+                                    
+                                     
+                                    <div class="modal-body pb-5">
+                                      <div class="d-flex mt-3 mb-3">
+                                        <p class="mr-auto"></p>
+                                        <p class="mr-auto h5 text-center">Block Mentions</p>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                    
+                                      <p class="text-center h6">Are you sure you want to block all future mentions
+                                            coming from https://twitter.com/Mr_Nixus?</p>
+                                      <div class="check">
+                                            All future mentions coming from this URL will be blocked and ignored.
+                                            Existing mentions will automatically go to trash
+                                    </div>
+                                      <div class="d-flex pr-5 pl-5 mt-5 mb-3">
+                                        <button class="btn btn-secondary mr-auto" style="border-radius: 0">Cancel</button>
+                                        <!-- <div class="mr-5"></div> -->
+                                        <button class="btn btn-danger " style="border-radius: 0; width: 150px">Block</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div> 
+
+                         </div>
+                        </div>
+                </div>
+           </div>
+
+
+           <div class="col-12 col-md-4">
+               <div class="lol">
+                <ul class="ul ul_1">
+                        <li><i class="fa fa-star mr-2 mt-3" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-envelope-open mr-2" aria-hidden="true"></i></li>
+                        <li class="shift"><i class="fa fa-trash mr-2" aria-hidden="true"></i></li>
+                        <li class=""><i class="fa fa-minus-circle mr-2" aria-hidden="true"></i></li>
+                </ul>
+            </div> 
+
+            <div class="card mt-5 ml-3 lol_0">
+                    <div class="card-body">
+                     <div class="row">
+                         <div class="col-12 col-md-4">
+                           <img src="img/ellipse.svg"> 
+                           <i class="fa fa-circle" aria-hidden="true"></i>
+                         
+                         </div>
+                         <div class="col-12 col-md-8">
+                                <p class="text-muted">@Okoyecb</p>
+                                <p class="details">Okoye Chidi B.</p>
+                                <p class="">..."Jaiz" bank have the best<br>customer service department</p>
+                                <hr class="hr_2">
+                                  <ul class="ol">
+                                      <li><i class="fa fa-share mr-" aria-hidden="true"></i></li>
+                                      <li><i class="fa fa-retweet " aria-hidden="true"></i></li>
+                                      <li><i class="fa fa-heart-o " aria-hidden="true"></i></li>
+                                      <li><i class="fa fa-quote-right" aria-hidden="true"></i></li>
+                                  </ul>
+                              </div>
+
+                     </div>
+                    </div>
+            </div>
+           </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+
+<!--JS, Popper.js, and jQuery  -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+</html>
+
